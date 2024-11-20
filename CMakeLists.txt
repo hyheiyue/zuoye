@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(lREANCPP)
+include_directories(includes)
+find_package(OpenCV REQUIRED)
+aux_source_directory(./src TOOLS)
+
+add_executable(test_add test/test_add.cpp ${TOOLS})
+add_executable(test_subtract test/test_subtract.cpp ${TOOLS})
+add_executable(test_dot_product test/test_dot_product.cpp ${TOOLS})
+add_executable(test_magnitude test/test_magnitude.cpp ${TOOLS})
+add_executable(test_normalize test/test_normalize.cpp ${TOOLS})
+add_executable(test_cross_prduct test/test_cross_prduct.cpp ${TOOLS})
+add_executable(test_copy test/test_copy.cpp ${TOOLS})
