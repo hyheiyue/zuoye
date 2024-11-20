@@ -16,9 +16,9 @@ Vector create_vector(size_t n)
     } 
     return a;
 }
-void destroy_vector(Vector& v)
+void destroy_vector(Vector& a)
 {
-    delete[] v.data;
+    delete[] a.data;
 }
 Vector add(const Vector& a, const Vector& b)
 {   Vector x;
