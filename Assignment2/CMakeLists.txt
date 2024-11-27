@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(lm)
+include_directories(includes)
+aux_source_directory(./src TOOLS)
+add_executable(a  test/a.cpp ${TOOLS})
+add_executable(b  test/b.cpp ${TOOLS})
